@@ -1,0 +1,43 @@
+{
+  "seed": 1,
+  "exog": "all",
+  "final": true,
+  "parameters": 30625,
+  "epochs_run": 4,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse_scaled": 0.8687552420532002,
+      "seconds": 395.8
+    },
+    {
+      "epoch": 2,
+      "train_mse_scaled": 0.7342886163907892,
+      "seconds": 728.2
+    },
+    {
+      "epoch": 3,
+      "train_mse_scaled": 0.6846332507974962,
+      "seconds": 1187.6
+    },
+    {
+      "epoch": 4,
+      "train_mse_scaled": 0.6300170996609856,
+      "seconds": 1672.0
+    }
+  ],
+  "config": {
+    "seed": 1,
+    "exog": "all",
+    "epochs": 4,
+    "patience": 3,
+    "final": true,
+    "seq_len": 168,
+    "label_len": 48,
+    "d_model": 32,
+    "train_stride": 4,
+    "batch": 64,
+    "lr": 0.001,
+    "out": "runs\\final_all_s1"
+  }
+}

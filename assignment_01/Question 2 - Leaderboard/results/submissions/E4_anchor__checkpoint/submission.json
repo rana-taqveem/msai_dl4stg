@@ -1,0 +1,36 @@
+{
+  "label": "E4_anchor__checkpoint",
+  "experiment": "E4_anchor",
+  "kind": "checkpoint",
+  "members": 3,
+  "declared_parameters_P": 112908,
+  "declared_epochs_E": 22,
+  "ens_RMSE": 56.487543231471655,
+  "ens_MAE": 41.27461263926445,
+  "ens_sMAPE": 55.54865181032742,
+  "ens_recent_RMSE": 55.82782081563605,
+  "ens_recent_MAE": 42.17519426992402,
+  "ens_recent_sMAPE": 71.02082186376394,
+  "forecast_mean": 85.57704874873983,
+  "forecast_min": 0.0,
+  "forecast_max": 230.96095298131323,
+  "zeros": 7,
+  "created_at": "2026-10-04 15:17:28",
+  "per_member": [
+    {
+      "seed": 0,
+      "parameters": 37636,
+      "declared_epochs": 8
+    },
+    {
+      "seed": 1,
+      "parameters": 37636,
+      "declared_epochs": 7
+    },
+    {
+      "seed": 2,
+      "parameters": 37636,
+      "declared_epochs": 7
+    }
+  ]
+}

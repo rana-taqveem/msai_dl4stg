@@ -1,0 +1,46 @@
+{
+  "label": "E2_exogtrend_feat__refit",
+  "experiment": "E2_exogtrend_feat",
+  "kind": "refit",
+  "members": 5,
+  "declared_parameters_P": 188170,
+  "declared_epochs_E": 87,
+  "ens_RMSE": 53.08990644101994,
+  "ens_MAE": 38.664861167194644,
+  "ens_sMAPE": 53.8111849107052,
+  "ens_recent_RMSE": 51.28089913638923,
+  "ens_recent_MAE": 37.755202602043155,
+  "ens_recent_sMAPE": 67.10626677637345,
+  "forecast_mean": 83.50679463717556,
+  "forecast_min": 5.115912999235824,
+  "forecast_max": 262.5877029042464,
+  "zeros": 0,
+  "created_at": "2026-10-04 15:30:17",
+  "per_member": [
+    {
+      "seed": 0,
+      "parameters": 37634,
+      "declared_epochs": 35
+    },
+    {
+      "seed": 1,
+      "parameters": 37634,
+      "declared_epochs": 19
+    },
+    {
+      "seed": 2,
+      "parameters": 37634,
+      "declared_epochs": 9
+    },
+    {
+      "seed": 3,
+      "parameters": 37634,
+      "declared_epochs": 7
+    },
+    {
+      "seed": 4,
+      "parameters": 37634,
+      "declared_epochs": 17
+    }
+  ]
+}

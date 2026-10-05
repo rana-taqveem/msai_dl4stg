@@ -1,0 +1,46 @@
+{
+  "label": "E7_ctx336__checkpoint",
+  "experiment": "E7_ctx336",
+  "kind": "checkpoint",
+  "members": 5,
+  "declared_parameters_P": 188170,
+  "declared_epochs_E": 58,
+  "ens_RMSE": 51.06765678318261,
+  "ens_MAE": 36.77806519903948,
+  "ens_sMAPE": 51.351742927338314,
+  "ens_recent_RMSE": 48.60662276381874,
+  "ens_recent_MAE": 37.383126983774645,
+  "ens_recent_sMAPE": 67.06117012521834,
+  "forecast_mean": 89.85191394226065,
+  "forecast_min": 0.09882437456731452,
+  "forecast_max": 258.80732298389484,
+  "zeros": 0,
+  "created_at": "2026-10-04 15:17:26",
+  "per_member": [
+    {
+      "seed": 0,
+      "parameters": 37634,
+      "declared_epochs": 9
+    },
+    {
+      "seed": 1,
+      "parameters": 37634,
+      "declared_epochs": 20
+    },
+    {
+      "seed": 2,
+      "parameters": 37634,
+      "declared_epochs": 13
+    },
+    {
+      "seed": 3,
+      "parameters": 37634,
+      "declared_epochs": 6
+    },
+    {
+      "seed": 4,
+      "parameters": 37634,
+      "declared_epochs": 10
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "args": {
+    "root": "/kaggle/working/task2_results",
+    "device": "cuda",
+    "no_amp": false,
+    "epochs": 20,
+    "patience": 5,
+    "train_stride": 2,
+    "batch": 128,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "extra_seeds": [
+      3,
+      4
+    ],
+    "top_k": 3,
+    "max_hours": 6.0,
+    "smoke": false
+  },
+  "events": [
+    {
+      "t_hours": 0.0,
+      "message": "plan started"
+    },
+    {
+      "t_hours": 0.0,
+      "message": "experiment E0_baseline",
+      "flags": ""
+    },
+    {
+      "t_hours": 0.054,
+      "message": "experiment E0_none",
+      "flags": "--exog none"
+    },
+    {
+      "t_hours": 0.079,
+      "message": "experiment E0_direct_level",
+      "flags": "--direct-exog --level-residual"
+    },
+    {
+      "t_hours": 0.127,
+      "message": "experiment E1_exogtrend",
+      "flags": "--trend-init exog"
+    },
+    {
+      "t_hours": 0.159,
+      "message": "experiment E2a_features_only",
+      "flags": "--features engineered"
+    },
+    {
+      "t_hours": 0.198,
+      "message": "experiment E2_exogtrend_feat",
+      "flags": "--trend-init exog --features engineered"
+    },
+    {
+      "t_hours": 0.259,
+      "message": "experiment E3_log",
+      "flags": "--trend-init exog --features engineered --target-transform log1p"
+    },
+    {
+      "t_hours": 0.309,
+      "message": "stage 2 builds on E2_exogtrend_feat (mean RMSE 57.69)"
+    },
+    {
+      "t_hours": 0.309,
+      "message": "experiment E4_anchor",
+      "flags": "--trend-init exog --features engineered --anchor"
+    },
+    {
+      "t_hours": 0.346,
+      "message": "experiment E5_anchor_direct",
+      "flags": "--trend-init exog --features engineered --anchor --direct-exog"
+    },
+    {
+      "t_hours": 0.4,
+      "message": "stage 3 builds on E2_exogtrend_feat (mean RMSE 57.69)"
+    },
+    {
+      "t_hours": 0.4,
+      "message": "experiment E6_wider",
+      "flags": "--trend-init exog --features engineered --d-model 64 --d-ff 128"
+    },
+    {
+      "t_hours": 0.471,
+      "message": "experiment E7_ctx336",
+      "flags": "--trend-init exog --features engineered --seq-len 336"
+    },
+    {
+      "t_hours": 0.543,
+      "message": "top 3 by mean validation RMSE: ['E7_ctx336', 'E6_wider', 'E2_exogtrend_feat']"
+    },
+    {
+      "t_hours": 0.543,
+      "message": "experiment E7_ctx336",
+      "flags": "--trend-init exog --features engineered --seq-len 336"
+    },
+    {
+      "t_hours": 0.571,
+      "message": "experiment E6_wider",
+      "flags": "--trend-init exog --features engineered --d-model 64 --d-ff 128"
+    },
+    {
+      "t_hours": 0.626,
+      "message": "experiment E2_exogtrend_feat",
+      "flags": "--trend-init exog --features engineered"
+    },
+    {
+      "t_hours": 0.654,
+      "message": "building checkpoint (no-refit) submissions for every experiment"
+    },
+    {
+      "t_hours": 0.655,
+      "message": "refitting E7_ctx336 on all history"
+    },
+    {
+      "t_hours": 0.724,
+      "message": "refitting E6_wider on all history"
+    },
+    {
+      "t_hours": 0.807,
+      "message": "refitting E2_exogtrend_feat on all history"
+    },
+    {
+      "t_hours": 0.868,
+      "message": "plan finished",
+      "total_hours": 0.87,
+      "failures": 0
+    }
+  ],
+  "failures": []
+}

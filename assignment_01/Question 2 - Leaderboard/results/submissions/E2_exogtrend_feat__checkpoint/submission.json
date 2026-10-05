@@ -1,0 +1,46 @@
+{
+  "label": "E2_exogtrend_feat__checkpoint",
+  "experiment": "E2_exogtrend_feat",
+  "kind": "checkpoint",
+  "members": 5,
+  "declared_parameters_P": 188170,
+  "declared_epochs_E": 56,
+  "ens_RMSE": 53.08990644101994,
+  "ens_MAE": 38.664861167194644,
+  "ens_sMAPE": 53.8111849107052,
+  "ens_recent_RMSE": 51.28089913638923,
+  "ens_recent_MAE": 37.755202602043155,
+  "ens_recent_sMAPE": 67.10626677637345,
+  "forecast_mean": 93.52621663148292,
+  "forecast_min": 2.160177574597566,
+  "forecast_max": 258.6417757552532,
+  "zeros": 0,
+  "created_at": "2026-10-04 15:17:28",
+  "per_member": [
+    {
+      "seed": 0,
+      "parameters": 37634,
+      "declared_epochs": 20
+    },
+    {
+      "seed": 1,
+      "parameters": 37634,
+      "declared_epochs": 12
+    },
+    {
+      "seed": 2,
+      "parameters": 37634,
+      "declared_epochs": 7
+    },
+    {
+      "seed": 3,
+      "parameters": 37634,
+      "declared_epochs": 6
+    },
+    {
+      "seed": 4,
+      "parameters": 37634,
+      "declared_epochs": 11
+    }
+  ]
+}

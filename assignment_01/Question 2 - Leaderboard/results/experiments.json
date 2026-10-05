@@ -1,0 +1,134 @@
+{
+  "E0_baseline": {
+    "flags": "",
+    "notes": "original Autoformer, all external variables",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  },
+  "E0_none": {
+    "flags": "--exog none",
+    "notes": "ablation: no external variables",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  },
+  "E0_direct_level": {
+    "flags": "--direct-exog --level-residual",
+    "notes": "previous best design",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  },
+  "E1_exogtrend": {
+    "flags": "--trend-init exog",
+    "notes": "covariate-conditioned decoder trend start",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  },
+  "E2a_features_only": {
+    "flags": "--features engineered",
+    "notes": "engineered features, original architecture",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  },
+  "E2_exogtrend_feat": {
+    "flags": "--trend-init exog --features engineered",
+    "notes": "exog trend start + engineered features",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  },
+  "E3_log": {
+    "flags": "--trend-init exog --features engineered --target-transform log1p",
+    "notes": "E2 + log1p target with smearing",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  },
+  "E4_anchor": {
+    "flags": "--trend-init exog --features engineered --anchor",
+    "notes": "E2_exogtrend_feat + decaying anchor to last value",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  },
+  "E5_anchor_direct": {
+    "flags": "--trend-init exog --features engineered --anchor --direct-exog",
+    "notes": "E2_exogtrend_feat + anchor + direct per-step covariate head",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  },
+  "E6_wider": {
+    "flags": "--trend-init exog --features engineered --d-model 64 --d-ff 128",
+    "notes": "E2_exogtrend_feat with d_model 64, d_ff 128",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  },
+  "E7_ctx336": {
+    "flags": "--trend-init exog --features engineered --seq-len 336",
+    "notes": "E2_exogtrend_feat with a 336-step context",
+    "settings": {
+      "epochs": 20,
+      "patience": 5,
+      "train_stride": 2,
+      "batch": 128,
+      "device": "cuda",
+      "amp": true
+    }
+  }
+}

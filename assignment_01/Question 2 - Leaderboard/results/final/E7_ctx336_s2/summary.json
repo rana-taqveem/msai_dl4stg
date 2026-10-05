@@ -1,0 +1,106 @@
+{
+  "seed": 2,
+  "exog": "all",
+  "design": "exogtrend",
+  "final": true,
+  "parameters": 37634,
+  "device_used": "cuda",
+  "amp_used": true,
+  "epochs_run": 8,
+  "declared_epochs": 21,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse_scaled": 0.5914390027170351,
+      "learning_rate": 0.001,
+      "seconds": 7.7
+    },
+    {
+      "epoch": 2,
+      "train_mse_scaled": 0.4157301847045944,
+      "learning_rate": 0.0009638427779428612,
+      "seconds": 14.3
+    },
+    {
+      "epoch": 3,
+      "train_mse_scaled": 0.37279216636567425,
+      "learning_rate": 0.0008608757210636101,
+      "seconds": 21.0
+    },
+    {
+      "epoch": 4,
+      "train_mse_scaled": 0.3521235976698836,
+      "learning_rate": 0.0007067746303734177,
+      "seconds": 27.6
+    },
+    {
+      "epoch": 5,
+      "train_mse_scaled": 0.3388235191621724,
+      "learning_rate": 0.000525,
+      "seconds": 34.3
+    },
+    {
+      "epoch": 6,
+      "train_mse_scaled": 0.3303973951635981,
+      "learning_rate": 0.0003432253696265824,
+      "seconds": 41.0
+    },
+    {
+      "epoch": 7,
+      "train_mse_scaled": 0.3247945719569392,
+      "learning_rate": 0.00018912427893638995,
+      "seconds": 47.6
+    },
+    {
+      "epoch": 8,
+      "train_mse_scaled": 0.3217400788555484,
+      "learning_rate": 8.61572220571388e-05,
+      "seconds": 54.3
+    }
+  ],
+  "config": {
+    "seed": 2,
+    "exog": "all",
+    "epochs": 8,
+    "patience": 5,
+    "final": true,
+    "history_end": null,
+    "seq_len": 336,
+    "label_len": 48,
+    "d_model": 32,
+    "direct_exog": false,
+    "exog_hidden": 16,
+    "level_residual": false,
+    "level_window": 24,
+    "features": "engineered",
+    "target_transform": "none",
+    "trend_init": "exog",
+    "trend_hidden": 16,
+    "trend_kernel": 13,
+    "anchor": false,
+    "anchor_tau": 6.0,
+    "heads": 4,
+    "d_ff": 64,
+    "e_layers": 2,
+    "d_layers": 1,
+    "kernel": 25,
+    "factor": 1.0,
+    "dropout": 0.1,
+    "recent_blocks": 24,
+    "train_stride": 2,
+    "batch": 128,
+    "lr": 0.001,
+    "lr_schedule": "cosine",
+    "device": "cuda",
+    "amp": true,
+    "selection_epochs": 13,
+    "out": "/kaggle/working/task2_results/final/E7_ctx336_s2"
+  },
+  "forecast_diagnostics": {
+    "raw_negative_count": 3,
+    "raw_min": -4.136899843268623,
+    "clipped_zero_count": 3,
+    "clipped_mean": 119.07051541668204,
+    "clipped_max": 287.8210843989187
+  }
+}

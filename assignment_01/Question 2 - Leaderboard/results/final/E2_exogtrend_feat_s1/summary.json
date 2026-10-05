@@ -1,0 +1,100 @@
+{
+  "seed": 1,
+  "exog": "all",
+  "design": "exogtrend",
+  "final": true,
+  "parameters": 37634,
+  "device_used": "cuda",
+  "amp_used": true,
+  "epochs_run": 7,
+  "declared_epochs": 19,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse_scaled": 0.6644457415622823,
+      "learning_rate": 0.001,
+      "seconds": 7.4
+    },
+    {
+      "epoch": 2,
+      "train_mse_scaled": 0.4689945101737976,
+      "learning_rate": 0.0009529602122536491,
+      "seconds": 13.3
+    },
+    {
+      "epoch": 3,
+      "train_mse_scaled": 0.421884542353013,
+      "learning_rate": 0.0008211576558828984,
+      "seconds": 19.0
+    },
+    {
+      "epoch": 4,
+      "train_mse_scaled": 0.3955053801045698,
+      "learning_rate": 0.0006306974436292494,
+      "seconds": 25.0
+    },
+    {
+      "epoch": 5,
+      "train_mse_scaled": 0.3826150448883281,
+      "learning_rate": 0.00041930255637075077,
+      "seconds": 30.9
+    },
+    {
+      "epoch": 6,
+      "train_mse_scaled": 0.37246934631291556,
+      "learning_rate": 0.0002288423441171016,
+      "seconds": 36.6
+    },
+    {
+      "epoch": 7,
+      "train_mse_scaled": 0.36844082404585443,
+      "learning_rate": 9.703978774635097e-05,
+      "seconds": 42.5
+    }
+  ],
+  "config": {
+    "seed": 1,
+    "exog": "all",
+    "epochs": 7,
+    "patience": 5,
+    "final": true,
+    "history_end": null,
+    "seq_len": 168,
+    "label_len": 48,
+    "d_model": 32,
+    "direct_exog": false,
+    "exog_hidden": 16,
+    "level_residual": false,
+    "level_window": 24,
+    "features": "engineered",
+    "target_transform": "none",
+    "trend_init": "exog",
+    "trend_hidden": 16,
+    "trend_kernel": 13,
+    "anchor": false,
+    "anchor_tau": 6.0,
+    "heads": 4,
+    "d_ff": 64,
+    "e_layers": 2,
+    "d_layers": 1,
+    "kernel": 25,
+    "factor": 1.0,
+    "dropout": 0.1,
+    "recent_blocks": 24,
+    "train_stride": 2,
+    "batch": 128,
+    "lr": 0.001,
+    "lr_schedule": "cosine",
+    "device": "cuda",
+    "amp": true,
+    "selection_epochs": 12,
+    "out": "/kaggle/working/task2_results/final/E2_exogtrend_feat_s1"
+  },
+  "forecast_diagnostics": {
+    "raw_negative_count": 17,
+    "raw_min": -18.473455574606376,
+    "clipped_zero_count": 17,
+    "clipped_mean": 92.2332340921002,
+    "clipped_max": 288.53386297169027
+  }
+}

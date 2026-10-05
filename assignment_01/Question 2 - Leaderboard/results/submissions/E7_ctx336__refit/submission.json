@@ -1,0 +1,46 @@
+{
+  "label": "E7_ctx336__refit",
+  "experiment": "E7_ctx336",
+  "kind": "refit",
+  "members": 5,
+  "declared_parameters_P": 188170,
+  "declared_epochs_E": 91,
+  "ens_RMSE": 51.06765678318261,
+  "ens_MAE": 36.77806519903948,
+  "ens_sMAPE": 51.351742927338314,
+  "ens_recent_RMSE": 48.60662276381874,
+  "ens_recent_MAE": 37.383126983774645,
+  "ens_recent_sMAPE": 67.06117012521834,
+  "forecast_mean": 93.71086489320525,
+  "forecast_min": 3.8726578211965945,
+  "forecast_max": 252.319760811576,
+  "zeros": 0,
+  "created_at": "2026-10-04 15:21:37",
+  "per_member": [
+    {
+      "seed": 0,
+      "parameters": 37634,
+      "declared_epochs": 13
+    },
+    {
+      "seed": 1,
+      "parameters": 37634,
+      "declared_epochs": 35
+    },
+    {
+      "seed": 2,
+      "parameters": 37634,
+      "declared_epochs": 21
+    },
+    {
+      "seed": 3,
+      "parameters": 37634,
+      "declared_epochs": 7
+    },
+    {
+      "seed": 4,
+      "parameters": 37634,
+      "declared_epochs": 15
+    }
+  ]
+}

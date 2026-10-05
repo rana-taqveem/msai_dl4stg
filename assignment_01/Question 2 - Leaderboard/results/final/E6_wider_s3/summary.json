@@ -1,0 +1,112 @@
+{
+  "seed": 3,
+  "exog": "all",
+  "design": "exogtrend",
+  "final": true,
+  "parameters": 126754,
+  "device_used": "cuda",
+  "amp_used": true,
+  "epochs_run": 9,
+  "declared_epochs": 23,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse_scaled": 0.6102967302588855,
+      "learning_rate": 0.001,
+      "seconds": 9.8
+    },
+    {
+      "epoch": 2,
+      "train_mse_scaled": 0.452877359530505,
+      "learning_rate": 0.0009713539948733066,
+      "seconds": 17.9
+    },
+    {
+      "epoch": 3,
+      "train_mse_scaled": 0.3906033649164088,
+      "learning_rate": 0.0008888711104815145,
+      "seconds": 26.1
+    },
+    {
+      "epoch": 4,
+      "train_mse_scaled": 0.36348975335850436,
+      "learning_rate": 0.0007625,
+      "seconds": 34.2
+    },
+    {
+      "epoch": 5,
+      "train_mse_scaled": 0.3432248280328863,
+      "learning_rate": 0.000607482884391792,
+      "seconds": 42.3
+    },
+    {
+      "epoch": 6,
+      "train_mse_scaled": 0.3303452353267109,
+      "learning_rate": 0.00044251711560820814,
+      "seconds": 50.4
+    },
+    {
+      "epoch": 7,
+      "train_mse_scaled": 0.32173300385475156,
+      "learning_rate": 0.0002875000000000001,
+      "seconds": 58.5
+    },
+    {
+      "epoch": 8,
+      "train_mse_scaled": 0.3153367842821514,
+      "learning_rate": 0.0001611288895184855,
+      "seconds": 66.6
+    },
+    {
+      "epoch": 9,
+      "train_mse_scaled": 0.31221040522350985,
+      "learning_rate": 7.864600512669356e-05,
+      "seconds": 74.7
+    }
+  ],
+  "config": {
+    "seed": 3,
+    "exog": "all",
+    "epochs": 9,
+    "patience": 5,
+    "final": true,
+    "history_end": null,
+    "seq_len": 168,
+    "label_len": 48,
+    "d_model": 64,
+    "direct_exog": false,
+    "exog_hidden": 16,
+    "level_residual": false,
+    "level_window": 24,
+    "features": "engineered",
+    "target_transform": "none",
+    "trend_init": "exog",
+    "trend_hidden": 16,
+    "trend_kernel": 13,
+    "anchor": false,
+    "anchor_tau": 6.0,
+    "heads": 4,
+    "d_ff": 128,
+    "e_layers": 2,
+    "d_layers": 1,
+    "kernel": 25,
+    "factor": 1.0,
+    "dropout": 0.1,
+    "recent_blocks": 24,
+    "train_stride": 2,
+    "batch": 128,
+    "lr": 0.001,
+    "lr_schedule": "cosine",
+    "device": "cuda",
+    "amp": true,
+    "selection_epochs": 14,
+    "out": "/kaggle/working/task2_results/final/E6_wider_s3"
+  },
+  "forecast_diagnostics": {
+    "raw_negative_count": 82,
+    "raw_min": -104.15119202815069,
+    "clipped_zero_count": 82,
+    "clipped_mean": 27.660382563271963,
+    "clipped_max": 156.70899268964175
+  }
+}

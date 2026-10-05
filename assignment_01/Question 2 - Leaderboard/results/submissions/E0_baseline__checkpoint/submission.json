@@ -1,0 +1,36 @@
+{
+  "label": "E0_baseline__checkpoint",
+  "experiment": "E0_baseline",
+  "kind": "checkpoint",
+  "members": 3,
+  "declared_parameters_P": 91875,
+  "declared_epochs_E": 40,
+  "ens_RMSE": 65.23855140255704,
+  "ens_MAE": 48.621564889738586,
+  "ens_sMAPE": 64.05263165775105,
+  "ens_recent_RMSE": 64.52586209397253,
+  "ens_recent_MAE": 44.88110656265663,
+  "ens_recent_sMAPE": 75.71913981241998,
+  "forecast_mean": 65.05902584895121,
+  "forecast_min": 0.0,
+  "forecast_max": 156.44670551368827,
+  "zeros": 26,
+  "created_at": "2026-10-04 15:17:29",
+  "per_member": [
+    {
+      "seed": 0,
+      "parameters": 30625,
+      "declared_epochs": 6
+    },
+    {
+      "seed": 1,
+      "parameters": 30625,
+      "declared_epochs": 14
+    },
+    {
+      "seed": 2,
+      "parameters": 30625,
+      "declared_epochs": 20
+    }
+  ]
+}

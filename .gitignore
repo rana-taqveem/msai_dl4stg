@@ -1,0 +1,65 @@
+# General Python files
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# AI/ML specific
+# Datasets (if too large for Git - use DVC otherwise)
+data/raw/
+data/processed/
+
+# Models and checkpoints
+models/*.h5
+models/*.pkl
+models/*.onnx
+models/*.pt
+checkpoints/
+runs/
+logs/
+
+# Notebook specific
+.ipynb_checkpoints
+
+# Task 1: generated/downloaded data, not checked into Git (stored on Google Drive)
+assignment_01/task1/local_runs/
+assignment_01/task1/data/conflict_dataset/
+assignment_01/task2/local_runs/
+assignment_01/task3/local_runs/
+assignment_01/task4/local_runs/
+assignment_01/task2/checkpoints/
+
+# Trained weights and cached features: too large for Git, reproducible from
+# the training scripts. Small JSON/CSV results stay tracked.
+assignment_01/*/model_weights/
+assignment_01/task4/cache/

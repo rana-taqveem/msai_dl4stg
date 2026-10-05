@@ -1,0 +1,94 @@
+{
+  "seed": 4,
+  "exog": "all",
+  "design": "exogtrend",
+  "final": true,
+  "parameters": 126754,
+  "device_used": "cuda",
+  "amp_used": true,
+  "epochs_run": 6,
+  "declared_epochs": 17,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse_scaled": 0.6510000004487879,
+      "learning_rate": 0.001,
+      "seconds": 9.7
+    },
+    {
+      "epoch": 2,
+      "train_mse_scaled": 0.4619787598357481,
+      "learning_rate": 0.0009363620667976085,
+      "seconds": 17.9
+    },
+    {
+      "epoch": 3,
+      "train_mse_scaled": 0.4055473704548443,
+      "learning_rate": 0.0007625,
+      "seconds": 26.0
+    },
+    {
+      "epoch": 4,
+      "train_mse_scaled": 0.3752629246781854,
+      "learning_rate": 0.000525,
+      "seconds": 34.2
+    },
+    {
+      "epoch": 5,
+      "train_mse_scaled": 0.35704042701160205,
+      "learning_rate": 0.0002875000000000001,
+      "seconds": 42.4
+    },
+    {
+      "epoch": 6,
+      "train_mse_scaled": 0.3473921432214625,
+      "learning_rate": 0.00011363793320239162,
+      "seconds": 50.6
+    }
+  ],
+  "config": {
+    "seed": 4,
+    "exog": "all",
+    "epochs": 6,
+    "patience": 5,
+    "final": true,
+    "history_end": null,
+    "seq_len": 168,
+    "label_len": 48,
+    "d_model": 64,
+    "direct_exog": false,
+    "exog_hidden": 16,
+    "level_residual": false,
+    "level_window": 24,
+    "features": "engineered",
+    "target_transform": "none",
+    "trend_init": "exog",
+    "trend_hidden": 16,
+    "trend_kernel": 13,
+    "anchor": false,
+    "anchor_tau": 6.0,
+    "heads": 4,
+    "d_ff": 128,
+    "e_layers": 2,
+    "d_layers": 1,
+    "kernel": 25,
+    "factor": 1.0,
+    "dropout": 0.1,
+    "recent_blocks": 24,
+    "train_stride": 2,
+    "batch": 128,
+    "lr": 0.001,
+    "lr_schedule": "cosine",
+    "device": "cuda",
+    "amp": true,
+    "selection_epochs": 11,
+    "out": "/kaggle/working/task2_results/final/E6_wider_s4"
+  },
+  "forecast_diagnostics": {
+    "raw_negative_count": 0,
+    "raw_min": 10.67854485533735,
+    "clipped_zero_count": 0,
+    "clipped_mean": 90.3080138674832,
+    "clipped_max": 257.5814215058268
+  }
+}

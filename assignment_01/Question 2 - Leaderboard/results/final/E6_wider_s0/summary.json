@@ -1,0 +1,136 @@
+{
+  "seed": 0,
+  "exog": "all",
+  "design": "exogtrend",
+  "final": true,
+  "parameters": 126754,
+  "device_used": "cuda",
+  "amp_used": true,
+  "epochs_run": 13,
+  "declared_epochs": 31,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse_scaled": 0.6256029046633664,
+      "learning_rate": 0.001,
+      "seconds": 9.8
+    },
+    {
+      "epoch": 2,
+      "train_mse_scaled": 0.4477556014762205,
+      "learning_rate": 0.0009861973632773746,
+      "seconds": 17.9
+    },
+    {
+      "epoch": 3,
+      "train_mse_scaled": 0.4065694887848461,
+      "learning_rate": 0.0009455916121852746,
+      "seconds": 26.1
+    },
+    {
+      "epoch": 4,
+      "train_mse_scaled": 0.36660937193562004,
+      "learning_rate": 0.0008805426053812729,
+      "seconds": 34.2
+    },
+    {
+      "epoch": 5,
+      "train_mse_scaled": 0.34138263744466446,
+      "learning_rate": 0.000794830754697299,
+      "seconds": 42.3
+    },
+    {
+      "epoch": 6,
+      "train_mse_scaled": 0.3285069754895042,
+      "learning_rate": 0.0006934373213452043,
+      "seconds": 50.4
+    },
+    {
+      "epoch": 7,
+      "train_mse_scaled": 0.3137169219115201,
+      "learning_rate": 0.0005822549231212784,
+      "seconds": 58.5
+    },
+    {
+      "epoch": 8,
+      "train_mse_scaled": 0.3073630509131095,
+      "learning_rate": 0.0004677450768787216,
+      "seconds": 66.6
+    },
+    {
+      "epoch": 9,
+      "train_mse_scaled": 0.298607339052593,
+      "learning_rate": 0.00035656267865479566,
+      "seconds": 74.7
+    },
+    {
+      "epoch": 10,
+      "train_mse_scaled": 0.2943948083064135,
+      "learning_rate": 0.000255169245302701,
+      "seconds": 82.8
+    },
+    {
+      "epoch": 11,
+      "train_mse_scaled": 0.29017959456233416,
+      "learning_rate": 0.00016945739461872694,
+      "seconds": 90.9
+    },
+    {
+      "epoch": 12,
+      "train_mse_scaled": 0.28732566254980424,
+      "learning_rate": 0.00010440838781472546,
+      "seconds": 99.0
+    },
+    {
+      "epoch": 13,
+      "train_mse_scaled": 0.28582813783603556,
+      "learning_rate": 6.38026367226253e-05,
+      "seconds": 107.1
+    }
+  ],
+  "config": {
+    "seed": 0,
+    "exog": "all",
+    "epochs": 13,
+    "patience": 5,
+    "final": true,
+    "history_end": null,
+    "seq_len": 168,
+    "label_len": 48,
+    "d_model": 64,
+    "direct_exog": false,
+    "exog_hidden": 16,
+    "level_residual": false,
+    "level_window": 24,
+    "features": "engineered",
+    "target_transform": "none",
+    "trend_init": "exog",
+    "trend_hidden": 16,
+    "trend_kernel": 13,
+    "anchor": false,
+    "anchor_tau": 6.0,
+    "heads": 4,
+    "d_ff": 128,
+    "e_layers": 2,
+    "d_layers": 1,
+    "kernel": 25,
+    "factor": 1.0,
+    "dropout": 0.1,
+    "recent_blocks": 24,
+    "train_stride": 2,
+    "batch": 128,
+    "lr": 0.001,
+    "lr_schedule": "cosine",
+    "device": "cuda",
+    "amp": true,
+    "selection_epochs": 18,
+    "out": "/kaggle/working/task2_results/final/E6_wider_s0"
+  },
+  "forecast_diagnostics": {
+    "raw_negative_count": 24,
+    "raw_min": -29.64818117087991,
+    "clipped_zero_count": 24,
+    "clipped_mean": 76.61108697491701,
+    "clipped_max": 264.92174358432163
+  }
+}

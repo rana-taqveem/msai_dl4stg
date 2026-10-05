@@ -1,0 +1,76 @@
+{
+  "seed": 2,
+  "exog": "all",
+  "design": "exogtrend",
+  "final": true,
+  "parameters": 126754,
+  "device_used": "cuda",
+  "amp_used": true,
+  "epochs_run": 3,
+  "declared_epochs": 11,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse_scaled": 0.6169319377225988,
+      "learning_rate": 0.001,
+      "seconds": 9.8
+    },
+    {
+      "epoch": 2,
+      "train_mse_scaled": 0.4385376169401057,
+      "learning_rate": 0.0007625,
+      "seconds": 17.9
+    },
+    {
+      "epoch": 3,
+      "train_mse_scaled": 0.3859781998045304,
+      "learning_rate": 0.0002875000000000001,
+      "seconds": 26.2
+    }
+  ],
+  "config": {
+    "seed": 2,
+    "exog": "all",
+    "epochs": 3,
+    "patience": 5,
+    "final": true,
+    "history_end": null,
+    "seq_len": 168,
+    "label_len": 48,
+    "d_model": 64,
+    "direct_exog": false,
+    "exog_hidden": 16,
+    "level_residual": false,
+    "level_window": 24,
+    "features": "engineered",
+    "target_transform": "none",
+    "trend_init": "exog",
+    "trend_hidden": 16,
+    "trend_kernel": 13,
+    "anchor": false,
+    "anchor_tau": 6.0,
+    "heads": 4,
+    "d_ff": 128,
+    "e_layers": 2,
+    "d_layers": 1,
+    "kernel": 25,
+    "factor": 1.0,
+    "dropout": 0.1,
+    "recent_blocks": 24,
+    "train_stride": 2,
+    "batch": 128,
+    "lr": 0.001,
+    "lr_schedule": "cosine",
+    "device": "cuda",
+    "amp": true,
+    "selection_epochs": 8,
+    "out": "/kaggle/working/task2_results/final/E6_wider_s2"
+  },
+  "forecast_diagnostics": {
+    "raw_negative_count": 59,
+    "raw_min": -98.98760254487416,
+    "clipped_zero_count": 59,
+    "clipped_mean": 55.88935755593744,
+    "clipped_max": 226.48484557057185
+  }
+}

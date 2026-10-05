@@ -1,0 +1,88 @@
+{
+  "seed": 4,
+  "exog": "all",
+  "design": "exogtrend",
+  "final": true,
+  "parameters": 37634,
+  "device_used": "cuda",
+  "amp_used": true,
+  "epochs_run": 5,
+  "declared_epochs": 15,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse_scaled": 0.6161748144400896,
+      "learning_rate": 0.001,
+      "seconds": 7.7
+    },
+    {
+      "epoch": 2,
+      "train_mse_scaled": 0.43059418063897353,
+      "learning_rate": 0.0009092830723281001,
+      "seconds": 14.3
+    },
+    {
+      "epoch": 3,
+      "train_mse_scaled": 0.38004067698879357,
+      "learning_rate": 0.0006717830723281,
+      "seconds": 21.0
+    },
+    {
+      "epoch": 4,
+      "train_mse_scaled": 0.35490924261025425,
+      "learning_rate": 0.0003782169276719,
+      "seconds": 27.5
+    },
+    {
+      "epoch": 5,
+      "train_mse_scaled": 0.34480087362097567,
+      "learning_rate": 0.0001407169276719,
+      "seconds": 34.2
+    }
+  ],
+  "config": {
+    "seed": 4,
+    "exog": "all",
+    "epochs": 5,
+    "patience": 5,
+    "final": true,
+    "history_end": null,
+    "seq_len": 336,
+    "label_len": 48,
+    "d_model": 32,
+    "direct_exog": false,
+    "exog_hidden": 16,
+    "level_residual": false,
+    "level_window": 24,
+    "features": "engineered",
+    "target_transform": "none",
+    "trend_init": "exog",
+    "trend_hidden": 16,
+    "trend_kernel": 13,
+    "anchor": false,
+    "anchor_tau": 6.0,
+    "heads": 4,
+    "d_ff": 64,
+    "e_layers": 2,
+    "d_layers": 1,
+    "kernel": 25,
+    "factor": 1.0,
+    "dropout": 0.1,
+    "recent_blocks": 24,
+    "train_stride": 2,
+    "batch": 128,
+    "lr": 0.001,
+    "lr_schedule": "cosine",
+    "device": "cuda",
+    "amp": true,
+    "selection_epochs": 10,
+    "out": "/kaggle/working/task2_results/final/E7_ctx336_s4"
+  },
+  "forecast_diagnostics": {
+    "raw_negative_count": 23,
+    "raw_min": -58.46858894391019,
+    "clipped_zero_count": 23,
+    "clipped_mean": 92.91646813394024,
+    "clipped_max": 287.24173118350876
+  }
+}
